@@ -1,0 +1,30 @@
+exp:
+  exp_name: 'radarflow2d_test2'
+  cuda_device: '0,1,2'
+  mode: 'train2d'
+  no_cuda: false
+  num_workers: 16
+  seed: 1234
+  train_seq: ['1', '30', '21', '44', '7', '12', '2', '9', '31', '28'] 
+  val_seq: ['35', '5', '16', '42']
+path:
+  path_head: '/home/data/K-Radar/K-Radar/'
+  data_path: '/home/data/K-Radar/K-Radar/generated_files/'
+  axis_path: ['info_arr.mat', 'arr_doppler.mat']
+  calib_path: 'info_calib/calib_radar_lidar.txt'
+  label_path: 'info_label_sceneflow'
+  lidar_path: 'os2-64'
+  radartensor_path: 'radar_tensor'
+  radartensor2d_path: 'radar_tensor2d'
+radar_tensor_dim:
+  range: 128
+  azimuth: 48
+  elevation: 32
+  doppler: 64
+train_params:
+  batch_size: 108
+  decay_epochs: 20
+  decay_rate: 0.5
+  epochs: 500
+  warmup_epochs: 5
+  lr: 0.001

@@ -1,0 +1,43 @@
+exp:
+  exp_name: 'radarmp_test'
+  cuda_device: '0'
+  mode: 'eval'
+  no_cuda: false
+  num_workers: 16
+  seed: 1234
+  seq: ['5','7',42','35','38']
+path:
+  path_head: '/home/data/K-Radar/'
+  data_path: '/home/data/K-Radar/generated/'
+  axis_path: ['info_arr.mat', 'arr_doppler.mat']
+  calib_path: 'info_calib/calib_radar_lidar.txt'
+  label_path: 'info_label_sceneflow'
+  lidar_path: 'os2-64'
+  radartensor_path: 'radar_tensor'
+  radartensor2d_path: 'radar_tensor2d'
+  model_path: 'model_88.t7'
+radar_tensor_dim:
+  range: 128
+  azimuth: 48
+  elevation: 16
+  doppler: 64
+radarmp:
+  dopmlp:
+    output_channel: 8
+  resnet3d:
+    baseplane: 32
+    widen_factor: 1.0
+  seg:
+    seg_rae64_att: 128
+    seg_ae_att: 128
+    output_dims: 64
+    num_heads: 2
+    num_layers: 2
+  correlation:
+    num_heads: 3
+    num_levels: 3
+    num_points: 50
+    embed_dims: 96
+    output_dims: 96
+eval_params:
+  batch_size: 2
