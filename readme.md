@@ -1,6 +1,6 @@
 # <h1 align=center font-weight:100> [AAAI26]RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving 
 ## Framework
-![Framework Diagram](assets/aaai03.pdf)
+![Framework Diagram](Resource/aaai03.pdf)
 ## Dataset preprocessing
 >Please follow the steps below to prepare and preprocess the dataset we used.
 ### 1. Obtain [K-Radar](https://github.com/kaist-avelab/K-Radar) dataset
@@ -62,7 +62,7 @@ python eval.py
 ```
 
 ## Performance
-![Performance](assets/aaai_supp01.pdf)
+![Performance](Resource/aaai_supp01.pdf)
 
 ## Citation
 If you find our paper and code useful for your research, please consider citing:
