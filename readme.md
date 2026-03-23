@@ -72,6 +72,7 @@ If you find our paper and code useful for your research, please consider citing:
   title={RadarMP: Motion Perception for 4D mmWave Radar in Autonomous Driving},
   author={Ruiqi, Cheng and Huijun, Di and Jian, Li and Feng, Liu and Wei, Liang},
   booktitle={The Fortieth AAAI Conference on Artificial Intelligence (AAAI-26)},
-  year={2026}
+  year={2026},
+  pages={3282-3290}
 }
 ```
